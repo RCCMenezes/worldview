@@ -12,7 +12,7 @@ import {
   getSelectionCounts,
   getDataSelectionSize,
 } from '../../modules/data/selectors';
-import ProductPicker from '../../components/layer/product-picker/product-picker';
+import SearchUiProvider from '../../components/layer/product-picker/search-ui-provider';
 import { openCustomContent } from '../../modules/modal/actions';
 import { toggleListAll } from '../../modules/natural-events/actions';
 import { DATA_GET_DATA_CLICK } from '../../modules/data/constants';
@@ -162,7 +162,7 @@ const mapDispatchToProps = (dispatch) => ({
         headerText: null,
         modalClassName: 'custom-layer-dialog light',
         backdrop: true,
-        CompletelyCustomModal: ProductPicker,
+        CompletelyCustomModal: SearchUiProvider,
         wrapClassName: '',
       }),
     );
